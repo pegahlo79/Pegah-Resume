@@ -1,153 +1,196 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>رزومه پگاه لطفی | مهندس نرم‌افزار</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Pegah Lotfi | Resume</title>
   <style>
     body {
-      font-family: 'Tahoma', sans-serif;
-      background-color: #fefefe;
-      color: #333;
-      direction: rtl;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-    }
-    .container {
-      width: 90%;
-      max-width: 960px;
-      margin: auto;
-      padding: 30px 20px;
+      background: #f0f4f9;
+      color: #333;
     }
     header {
-      background-color: #283593;
+      background: linear-gradient(135deg, #0077cc, #005fa3);
       color: white;
-      padding: 40px 0;
+      padding: 30px 20px;
       text-align: center;
+      position: relative;
     }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+    header h1 {
+      margin: 0;
+      font-size: 34px;
     }
-    h2 {
-      margin-top: 40px;
-      border-bottom: 2px solid #283593;
-      padding-bottom: 8px;
-      color: #283593;
+    header p {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+    .contact {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .lang-btn {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background: #ffdd57;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    section {
+      background: white;
+      margin-bottom: 25px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    section h2 {
+      color: #0077cc;
+      border-left: 4px solid #0077cc;
+      padding-left: 10px;
+      margin-bottom: 15px;
+      font-size: 22px;
     }
     ul {
-      padding-right: 20px;
-      list-style: square;
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
-    li, p {
-      font-size: 1.05em;
-      line-height: 1.8;
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
     }
-    a {
-      color: #283593;
-      text-decoration: none;
+    ul li::before {
+      content: "•";
+      color: #0077cc;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
     }
-    a:hover {
-      text-decoration: underline;
+    /* فارسی */
+    .fa {
+      direction: rtl;
+      font-family: "Tahoma", "Vazirmatn", sans-serif;
+      text-align: right;
     }
-    footer {
-      background-color: #eee;
-      text-align: center;
-      padding: 20px 0;
-      margin-top: 40px;
-      font-size: 0.9em;
+    .hidden {
+      display: none;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <div class="container">
-    <h1>پگاه لطفی</h1>
-    <p>مهندس نرم‌افزار | توسعه‌دهنده وب | مشاور تحصیلی</p>
-  </div>
-</header>
+  <header>
+    <h1>Pegah Lotfi</h1>
+    <p class="en">Software Engineer</p>
+    <p class="fa hidden">مهندس نرم‌افزار</p>
+    <div class="contact en">
+      📍 Damghan, Iran | ✉️ pegahlotfi2000@gmail.com | 📱 +98-939-796-xxxx <br>
+      🔗 <a href="https://pegahlo79.github.io/Pegah-Resume" target="_blank" style="color:#ffdd57;">Portfolio Website</a> |
+      <a href="https://github.com/pegahlo79" target="_blank" style="color:#ffdd57;">GitHub</a>
+    </div>
+    <div class="contact fa hidden">
+      📍 دامغان، ایران | ✉️ pegahlotfi2000@gmail.com | 📱 +98-939-796-xxxx <br>
+      🔗 <a href="https://pegahlo79.github.io/Pegah-Resume" target="_blank" style="color:#ffdd57;">وب‌سایت رزومه</a> |
+      <a href="https://github.com/pegahlo79" target="_blank" style="color:#ffdd57;">گیت‌هاب</a>
+    </div>
+    <button class="lang-btn" onclick="toggleLang()">FA / EN</button>
+  </header>
 
-<section class="container">
-  <h2>درباره من</h2>
-  <p>
-    مهندس نرم‌افزار با تجربه در توسعه وب، طراحی رابط کاربری، برنامه‌نویسی، امنیت شبکه، آموزش و مشاوره تحصیلی. علاقه‌مند به یادگیری مداوم، حل مسئله و ارتقاء کیفیت سیستم‌ها. توانمند در اجرای پروژه‌های چندمنظوره با دقت و تعهد بالا.
-  </p>
-</section>
+  <main>
+    <!-- Summary -->
+    <section>
+      <h2 class="en">Summary</h2>
+      <h2 class="fa hidden">خلاصه</h2>
+      <p class="en">
+        Motivated and detail-oriented <strong>Software Engineer</strong> with strong skills in 
+        <strong>web development, database design, and software solutions</strong>. 
+        Experienced in creating academic and personal projects including bots, management systems, and responsive websites. 
+        Passionate about continuous learning and building efficient digital solutions. 
+        Seeking opportunities in <strong>software development and web engineering</strong>.
+      </p>
+      <p class="fa hidden">
+        یک <strong>مهندس نرم‌افزار</strong> با انگیزه و دقیق هستم که در زمینه 
+        <strong>توسعه وب، طراحی پایگاه داده و راه‌حل‌های نرم‌افزاری</strong> مهارت دارم.  
+        تجربه انجام پروژه‌های دانشگاهی و شخصی از جمله ربات‌ها، سیستم‌های مدیریتی و وب‌سایت‌های ریسپانسیو را دارم.  
+        علاقه‌مند به یادگیری مداوم و ساخت راه‌حل‌های دیجیتال کارآمد هستم و به دنبال فرصت‌های شغلی در 
+        <strong>توسعه نرم‌افزار و مهندسی وب</strong>.
+      </p>
+    </section>
 
-<section class="container">
-  <h2>مهارت‌ها</h2>
-  <ul>
-    <li><strong>برنامه‌نویسی:</strong> Python، C#، JavaScript، HTML5، CSS3</li>
-    <li><strong>توسعه وب:</strong> طراحی رابط کاربری، صفحات ریسپانسیو، پروژه‌های Front-end</li>
-    <li><strong>ابزارها و فریم‌ورک‌ها:</strong> Git، Bootstrap، Node.js، npm</li>
-    <li><strong>پایگاه‌داده:</strong> MySQL، SQLite، مدل‌سازی داده‌ها (ER)</li>
-    <li><strong>سیستم‌ها و امنیت:</strong> مفاهیم امنیت شبکه و تست نفوذ (مقدماتی)</li>
-    <li><strong>توسعه اندروید:</strong> اپلیکیشن‌های ساده آموزشی (مقدماتی)</li>
-    <li><strong>نرم‌افزارها:</strong> Word، Excel، PowerPoint، Photoshop</li>
-    <li><strong>سایر:</strong> مشاوره تحصیلی، تایپ حرفه‌ای (فارسی و انگلیسی)</li>
-  </ul>
-</section>
+    <!-- Skills -->
+    <section>
+      <h2 class="en">Skills</h2>
+      <h2 class="fa hidden">مهارت‌ها</h2>
+      <ul class="en">
+        <li><strong>Programming:</strong> Python, C#, JavaScript, HTML5, CSS3</li>
+        <li><strong>Frameworks & Tools:</strong> Node.js, npm, Git, Bootstrap, Flask</li>
+        <li><strong>Databases:</strong> MySQL, SQLite</li>
+        <li><strong>Other:</strong> UI/UX design, Android development, Network security, Office tools, Photoshop</li>
+      </ul>
+      <ul class="fa hidden">
+        <li><strong>برنامه‌نویسی:</strong> Python، C#، JavaScript، HTML5، CSS3</li>
+        <li><strong>فریم‌ورک‌ها و ابزارها:</strong> Node.js، npm، Git، Bootstrap، Flask</li>
+        <li><strong>پایگاه داده:</strong> MySQL، SQLite</li>
+        <li><strong>سایر:</strong> طراحی UI/UX، توسعه اندروید، امنیت شبکه، نرم‌افزارهای Office و Photoshop</li>
+      </ul>
+    </section>
 
-<section class="container">
-  <h2>سوابق شغلی</h2>
-  <ul>
-    <li>پشتیبان سایت وردپرسی دانشگاه آزاد دامغان – ۱۴۰۲ تا ۱۴۰۳</li>
-    <li>مدیر کافینت آنلاین (ارائه خدمات دیجیتال) – از ۱۴۰۱ تاکنون</li>
-    <li>مشاور تحصیلی پایه نهم و انتخاب رشته</li>
-    <li>کارآموزی در دفتر پیشخوان دولت و آموزش ابتدایی (پایه دوم و سوم)</li>
-  </ul>
-</section>
+    <!-- Projects -->
+    <section>
+      <h2 class="en">Projects</h2>
+      <h2 class="fa hidden">پروژه‌ها</h2>
+      <ul class="en">
+        <li><strong>Online Major Selection System</strong> – A web-based platform for helping students choose majors.</li>
+        <li><strong>Educational Management Software (C#)</strong> – A desktop application for managing records and classes.</li>
+        <li><strong>Telegram Counseling Bot (Python)</strong> – Automated counseling and Q&A bot.</li>
+        <li><strong>Inventory Management System (JSON + npm)</strong> – Warehouse management with data storage and UI.</li>
+      </ul>
+      <ul class="fa hidden">
+        <li><strong>سامانه انتخاب رشته آنلاین</strong> – یک پلتفرم تحت وب برای کمک به دانش‌آموزان در انتخاب رشته.</li>
+        <li><strong>نرم‌افزار مدیریت آموزشگاه (C#)</strong> – نرم‌افزار دسکتاپ برای مدیریت دانشجویان و کلاس‌ها.</li>
+        <li><strong>ربات تلگرام مشاوره (Python)</strong> – ربات خودکار برای مشاوره و پاسخگویی.</li>
+        <li><strong>سیستم انبارداری (JSON + npm)</strong> – مدیریت انبار با ذخیره داده و رابط کاربری.</li>
+      </ul>
+      <p class="en">👉 For more details, please visit my <a href="https://github.com/pegahlo79" target="_blank">GitHub profile</a>.</p>
+      <p class="fa hidden">👉 برای جزئیات بیشتر، لطفاً به <a href="https://github.com/pegahlo79" target="_blank">گیت‌هاب من</a> مراجعه کنید.</p>
+    </section>
 
-<section class="container">
-  <h2>پروژه‌ها</h2>
-  <ul>
-    <li>سامانه انتخاب رشته آنلاین – طراحی برای مدارس با تحلیل نمرات و علایق</li>
-    <li>نرم‌افزار مدیریت آموزشگاه با C# – شامل ثبت‌نام، لیست کلاس‌ها و مدیریت کاربران</li>
-    <li>ربات تلگرام مشاوره تحصیلی – توسعه با Python و ساخت منوهای داینامیک</li>
-    <li>سایت فروشگاهی اختصاصی – پیاده‌سازی کامل با HTML/CSS/JS</li>
-    <li>سیستم انبارداری پیشرفته – با JSON، مدیریت محصولات و گزارش‌گیری (تیر ۱۴۰۴)</li>
-    <li>دایرکت اتوماتیک اینستاگرام – ربات تعامل خودکار با کاربران</li>
-  </ul>
-</section>
+    <!-- Education -->
+    <section>
+      <h2 class="en">Education</h2>
+      <h2 class="fa hidden">تحصیلات</h2>
+      <ul class="en">
+        <li><strong>B.Sc. in Software Engineering</strong> – Islamic Azad University of Damghan (2021 – 2025)</li>
+        <li><strong>A.A. in Computer Software</strong> – (2019 – 2021)</li>
+        <li><strong>High School Diploma in Computer Networks & Software</strong> – (2017 – 2019)</li>
+      </ul>
+      <ul class="fa hidden">
+        <li><strong>کارشناسی مهندسی نرم‌افزار</strong> – دانشگاه آزاد اسلامی دامغان (۱۴۰۱ – ۱۴۰۴)</li>
+        <li><strong>کاردانی نرم‌افزار کامپیوتر</strong> – (۱۳۹۸ – ۱۴۰۰)</li>
+        <li><strong>دیپلم شبکه و نرم‌افزار رایانه</strong> – (۱۳۹۶ – ۱۳۹۸)</li>
+      </ul>
+    </section>
+  </main>
 
-<section class="container">
-  <h2>گواهینامه‌ها</h2>
-  <ul>
-    <li>دوره «داده‌کاوی مقدماتی» – دانشگاه آزاد دامغان – خرداد ۱۴۰۴ – ۴ ساعت آموزشی</li>
-  </ul>
-  <img src="Data-Mining-Certificate.PNG" alt="گواهینامه داده‌کاوی" style="max-width: 300px; border:1px solid #ccc; border-radius:8px; margin-top:10px;">
-</section>
-
-<section class="container">
-  <h2>زمینه‌های همکاری</h2>
-  <p>آماده همکاری در حوزه‌های زیر هستم:</p>
-  <ul>
-    <li>توسعه وب و طراحی سایت (وردپرس یا اختصاصی)</li>
-    <li>پروژه‌های پایتون، Node.js و هوش مصنوعی</li>
-    <li>طراحی اپلیکیشن اندروید</li>
-    <li>تولید محتوا و مدیریت پیج اینستاگرام</li>
-    <li>ترجمه تخصصی (انگلیسی به فارسی)</li>
-    <li>تایپ سریع و دقیق (فارسی و لاتین)</li>
-    <li>مشاوره تحصیلی و انتخاب رشته</li>
-    <li>خدمات کافینت آنلاین (فرم، ثبت‌نام، چاپ و...)</li>
-  </ul>
-</section>
-
-<section class="container">
-  <h2>راه‌های ارتباطی</h2>
-  <p><i class="fas fa-envelope"></i> <strong>ایمیل:</strong> <a href="mailto:pegahlotfi2000@gmail.com">pegahlotfi2000@gmail.com</a></p>
-  <p><i class="fas fa-phone"></i> <strong>شماره تماس:</strong> 0939796xxxx</p>
-  <p><i class="fab fa-instagram"></i> <strong>اینستاگرام:</strong> <a href="https://instagram.com/pegahdev">@pegahdev</a></p>
-  <p><i class="fas fa-globe"></i> <strong>کافینت آنلاین:</strong> <a href="https://instagram.com/internetcafe7980">@internetcafe7980</a></p>
-  <p><i class="fab fa-linkedin"></i> <strong>لینکدین:</strong> <a href="https://www.linkedin.com/in/pegah-lotfi-5b0a05176/">pegah-lotfi</a></p>
-  <p><i class="fab fa-github"></i> <strong>گیت هاب:</strong> <a href="https://github.com/pegahlo79">pegahlo79</a></p>
-</section>
-
-<footer>
-  <p>&copy; ۲۰۲۵ پگاه لطفی | تمامی حقوق محفوظ است.</p>
-</footer>
+  <script>
+    function toggleLang() {
+      document.querySelectorAll('.en').forEach(el => el.classList.toggle('hidden'));
+      document.querySelectorAll('.fa').forEach(el => el.classList.toggle('hidden'));
+    }
+  </script>
 
 </body>
 </html>
